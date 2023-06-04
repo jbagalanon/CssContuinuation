@@ -1,16 +1,26 @@
-.banner {
-  border: 5px solid red;
-  padding: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  height: 200px;
+  width: 50%;
+  float: right;
 }
 
 .one {
-  float: right;
-}
-.two {
-  float: left;
-  height: 40px;
+  background: red;
 }
 
-p {
-  clear: both;
+.two {
+  background: greenyellow;
+}
+
+.three {
+  background: lightblue;
+}
+.four {
+  background: orange;
 }
