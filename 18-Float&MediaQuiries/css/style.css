@@ -1,26 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* position:static :default always position according to the normal flow. 
+position:relative :position according to the normal flow but we can change the position using top, bottom, left, right property.
+
+*/
 
 div {
-  height: 200px;
-  width: 50%;
-  float: right;
+  border: 3px solid red;
+  background: yellow;
+  margin-top: 40px;
 }
 
 .one {
-  background: red;
+  background: blue;
+  color: white;
+  position: relative;
+  bottom: 2rem;
+  /* left: 20%; */
+  right: 40px;
 }
 
 .two {
-  background: greenyellow;
+  background: green;
+  color: white;
 }
 
-.three {
-  background: lightblue;
-}
-.four {
-  background: orange;
+.special {
+  background-color: pink;
+  font-size: 20px;
+  color: #222;
 }
