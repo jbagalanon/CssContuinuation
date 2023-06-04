@@ -10,7 +10,7 @@ position:absolute :position according to the parent element. if parent element i
   color: white;
   font-size: 1.5rem;
   text-transform: capitalize;
-  position: fixed;
+  position: sticky;
   margin-top: 0;
   top: 0;
   left: 0;
@@ -21,7 +21,6 @@ div {
   border: 3px solid red;
   background: yellow;
   margin-top: 40px;
-  /* position: relative; */
 }
 
 .one {
