@@ -1,16 +1,36 @@
+/* if no additional setting in 
+background: url("../images/folder-img.jpeg");
+then the defaul value will be image repeat in both direction or crop 
+additiona settings
+background-repeat: repeat, no-repeat;
+round = means stretch the image to fit the container
+
+in-order - if several repeat settings are given then the last one will be applied
+*/
+
 div {
   height: 300px;
   color: white;
+  border: 2px solid red;
 }
 
 .big-img {
   background: url("../big.jpeg");
+  background-repeat: no-repeat;
+  background-repeat: round;
 }
 
 .small-img {
   background: url("../small.jpeg");
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: space;
+  background-repeat: round;
 }
 
 .folder-img {
   background: url("../images/folder-img.jpeg");
+  background-repeat: no-repeat;
 }
