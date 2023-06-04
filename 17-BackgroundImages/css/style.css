@@ -17,7 +17,7 @@ background-attachment: fixed, scroll;
 fixed = the image will be fixed in the container
 scroll = the image will be scrolled in the container
 */
-/* 
+
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +34,7 @@ div {
   align-items: center;
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .big-img {
@@ -52,38 +53,10 @@ div {
 }
 
 .folder-img {
-  background: url("../big.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
-
-div {
-  width: 150px;
-  height: 150px;
-  margin: 5px;
-}
-
-.one {
-  background: linear-gradient(blue, green);
-}
-
-.two {
-  background: linear-gradient(blue, green, red, yellow);
-}
-
-.three {
-  background: linear-gradient(160deg, red, green);
-}
-
-.four {
-  background: linear-gradient(to top right, red, green);
-}
-
-.five {
-  background: linear-gradient(blue 10%, yellow 90%);
-}
-
-.six {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(
+      to top,
+      rgba(123, 0, 0, 0.3),
+      rgba(20, 20, 83, 0.5)
+    ),
+    url("../big.jpeg") center/cover no-repeat;
 }
