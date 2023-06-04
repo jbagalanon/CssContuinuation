@@ -5,6 +5,18 @@ position:absolute :position according to the parent element. if parent element i
 
 */
 
+.nav {
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 div {
   border: 3px solid red;
   background: yellow;
@@ -15,8 +27,6 @@ div {
 .one {
   background: blue;
   color: white;
-  position: absolute;
-  top: 0;
 }
 
 .two {
@@ -28,7 +38,8 @@ div {
   background-color: pink;
   font-size: 20px;
   color: #222;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
+}
+.container {
+  min-height: 100vh;
+  background: blue;
 }
