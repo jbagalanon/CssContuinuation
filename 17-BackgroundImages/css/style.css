@@ -10,6 +10,8 @@ in-order - if several repeat settings are given then the last one will be applie
 background-size: cover, contain;
 cover = stretch the image to fit the container,
 contain = stretch the image to fit the container but the image will not be cropped
+
+backgroup-position: center, top, bottom, left, right;
 */
 
 div {
@@ -20,14 +22,17 @@ div {
 
 .big-img {
   background: url("../big.jpeg");
-  /* background-repeat: no-repeat; */
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .small-img {
   background: url("../small.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: contain; */
+  background-position: top;
+  background-position: 20% 50%;
 }
 
 .folder-img {
