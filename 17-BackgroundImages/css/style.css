@@ -12,12 +12,28 @@ cover = stretch the image to fit the container,
 contain = stretch the image to fit the container but the image will not be cropped
 
 backgroup-position: center, top, bottom, left, right;
+
+background-attachment: fixed, scroll;
+fixed = the image will be fixed in the container
+scroll = the image will be scrolled in the container
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 div {
   height: 300px;
   color: white;
   border: 2px solid red;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .big-img {
@@ -28,15 +44,16 @@ div {
 }
 
 .small-img {
-  background: url("../small.jpeg");
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  background-position: top;
-  background-position: 20% 50%;
-}
-
-.folder-img {
   background: url("../images/folder-img.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.folder-img {
+  background: url("../big.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
