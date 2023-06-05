@@ -1,0 +1,41 @@
+/* Inset Property
+the inset property is a shorthand 
+that corresponds to the top, right, bottom, and left properties.
+
+position: absolute; 
+this property is used to position the element relative to its first positioned (not static) ancestor element. 
+
+ex: you can position an element at the top-left corner of its parent using top: 0; left: 0 bottom: 0; right: 0;
+
+inset:0; is a shorthand of top: 0; left: 0 bottom: 0; right: 0;
+
+*/
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  margin-bottom: 1rem;
+}
+
+.special {
+  position: relative;
+}
+
+.special h1 {
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  inset: 0;
+}
