@@ -1,0 +1,24 @@
+/* 
+
+::before ::after pseudo element creates element and inserts it before or after the content of the selected element
+
+img --- does not work
+
+*/
+
+p::before {
+  content: "Hi there! ";
+  display: block;
+  background: #222;
+  font-weight: 700;
+  font-size: 2rem;
+  color: red;
+}
+
+p::after {
+  content: " Hi there! I am after paragraph ";
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: red;
+}

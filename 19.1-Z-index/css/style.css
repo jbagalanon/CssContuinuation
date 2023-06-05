@@ -24,7 +24,7 @@ img {
 .one {
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: -4;
 }
 
 .two {
