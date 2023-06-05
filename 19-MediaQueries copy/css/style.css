@@ -1,35 +1,40 @@
-/* Media Quiries
-REsponsive design
-Style elements on different screen sizes
-minwidth: --- starting from
-max-width --- up to
-mobile first design
+/* 
+z-index -- z-axis
+0-default
+does not work on static elements position:static
+
+the bigger the z-index the closer to the user or at the top of the stack
+
 */
 
-body {
-  background: yellow;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
 }
 
 .banner {
-  background: red;
-}
-h1 {
-  color: #fff;
-  text-align: center;
-  text-decoration: underline;
-  text-transform: capitalize;
+  border: 5px solid red;
+  margin: 20px;
+  width: 80vw;
+  height: 70vh;
+  position: relative;
 }
 
-@media screen and (min-width: 576px) {
-  body {
-    background: green;
-  }
-  .banner {
-    background: blue;
-  }
-  h1 {
-    font-size: 60px;
-    text-decoration: none;
-  }
+.one {
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.two {
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+}
+
+.three {
+  top: 20%;
+  left: 20%;
+  z-index: 3;
 }
