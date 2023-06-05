@@ -31,6 +31,7 @@ div::before {
   top: -40px;
   left: -40px;
   z-index: -2;
+  transition: all 0.5s linear;
 }
 
 div::after {
@@ -42,6 +43,7 @@ div::after {
   top: -20px;
   left: -20px;
   z-index: -1;
+  transition: all 0.5s linear;
 }
 
 div:hover::after,
