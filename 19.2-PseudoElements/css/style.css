@@ -16,7 +16,9 @@ p::before {
 }
 
 p::after {
-  content: " Hi there! I am after paragraph ";
+  content: " ";
+  height: 30px;
+  background: red;
   display: block;
   font-weight: 700;
   font-size: 1rem;
