@@ -7,20 +7,18 @@ div > h1 = means that h1 is a direct child of div.
 class selector is more specific than element selector.
 
 css order is important. The last one will be applied.
+
+
+::first-line = pseudo element
+the first line of the element will be selected. and the style will be applied to it. example: p::first-line{font-weight: bold;}
+{
+::first-letter = pseudo element
 */
 
-div h1 {
-  color: red;
+p::first-line {
+  font-weight: bold;
 }
 
-div > h1 {
-  color: blue;
-}
-
-.header h1 {
-  color: green;
-}
-
-.header > h1 {
-  color: purple;
+p::first-letter {
+  font-size: 2em;
 }
