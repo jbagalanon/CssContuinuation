@@ -1,24 +1,26 @@
 /* Basic Selector
 
 Descendant and Child Selector
+
+div > h1 = means that h1 is a direct child of div.
+
+class selector is more specific than element selector.
+
+css order is important. The last one will be applied.
 */
 
-* {
+div h1 {
   color: red;
 }
 
-#heading {
-  font-size: 40px;
-  text-transform: uppercase;
+div > h1 {
   color: blue;
 }
 
-.heading {
-  font-size: 20px;
-  text-transform: capitalize;
+.header h1 {
   color: green;
 }
 
-p {
-  letter-spacing: 5px;
+.header > h1 {
+  color: purple;
 }
