@@ -1,6 +1,7 @@
 /* Basic Selector
 
 Descendant and Child Selector
+<<<<<<< HEAD
 
 div > h1 = means that h1 is a direct child of div.
 
@@ -22,3 +23,30 @@ p::first-line {
 p::first-letter {
   font-size: 2em;
 }
+
+/*
+diffrent type of selectors css
+
+
+* {
+  color: red;
+}
+
+#heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: green;
+}
+
+p {
+  letter-spacing: 5px;
+
+}
+
+ */
