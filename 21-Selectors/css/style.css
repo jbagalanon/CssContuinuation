@@ -54,7 +54,7 @@ p {
 }
  */
 
-/* hover pseudo start */
+/* hover pseudo start implementation css
 
 div:hover {
   background-color: darkolivegreen;
@@ -71,3 +71,38 @@ a:hover {
   font-size: 20px;
   background: darkred;
 }
+*/
+
+/*
+:link = unvisited link
+:visited = visited link
+:hover = mouse over link
+:active = as the user clicks on the link
+a = all links
+*/
+
+a {
+  display: block;
+  background: lightsteelblue;
+  margin: 10px;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: greenyellow;
+}
+
+a:active {
+  color: blue;
+}
+
+/* root pseudo element css
+html, body, div, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+*/
