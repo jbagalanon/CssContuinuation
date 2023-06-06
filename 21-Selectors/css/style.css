@@ -16,6 +16,8 @@ the first line of the element will be selected. and the style will be applied to
 ::first-letter = pseudo element
 */
 
+/* first line pseudo element css
+
 p::first-line {
   font-weight: bold;
 }
@@ -23,6 +25,8 @@ p::first-line {
 p::first-letter {
   font-size: 2em;
 }
+
+*/
 
 /*
 diffrent type of selectors css
@@ -48,5 +52,22 @@ p {
   letter-spacing: 5px;
 
 }
-
  */
+
+/* hover pseudo start */
+
+div:hover {
+  background-color: darkolivegreen;
+}
+
+.header:hover {
+  background-color: burlywood;
+  color: wheat;
+  letter-spacing: 3px;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  background: darkred;
+}
