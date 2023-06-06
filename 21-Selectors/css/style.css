@@ -79,7 +79,7 @@ a:hover {
 :hover = mouse over link
 :active = as the user clicks on the link
 a = all links
-*/
+
 
 a {
   display: block;
@@ -99,6 +99,8 @@ a:active {
   color: blue;
 }
 
+*/
+
 /* root pseudo element css
 html, body, div, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -106,3 +108,14 @@ html, body, div, p, h1, h2, h3, h4, h5, h6 {
 }
 
 */
+
+:root {
+  font-size: 20px;
+}
+
+.absolute {
+  font-size: 24px;
+}
+.relative {
+  font-size: 1.5rem;
+}
