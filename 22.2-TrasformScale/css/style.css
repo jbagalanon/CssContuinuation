@@ -27,5 +27,5 @@ div {
 .three {
   background: green;
   transform: scale(1.1, 2.5);
-  transform: scale(2);
+  /* transform: scale(2); */
 }
