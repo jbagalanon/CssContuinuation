@@ -42,7 +42,7 @@ skew(deg) - skew the element along the X-axis by the given degree
 
 skew(x,y) - skew the element along the X-axis and Y-axis by the given degree
 
-*/
+
 
 div {
   width: 150px;
@@ -62,4 +62,42 @@ div {
 .three {
   background: green;
   transform: skew(20deg, 30deg);
+}
+
+end of css skew */
+
+/* Start of css transition property 
+
+transition - changer overtime
+transition-property - specifies the name of the CSS property the transition effect is for
+
+transition-duration - specifies how many seconds or milliseconds the transition effect takes to complete
+
+In div with background color means the background color will change over time
+
+while color affects the text color
+
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+
+div:hover {
+  background: coral;
+}
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+  transition-property: background;
+  transition-duration: 300ms;
 }
