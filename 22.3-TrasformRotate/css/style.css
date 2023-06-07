@@ -77,7 +77,7 @@ In div with background color means the background color will change over time
 
 while color affects the text color
 
-*/
+
 
 div {
   width: 150px;
@@ -100,4 +100,40 @@ div:hover {
   background: green;
   transition-property: background;
   transition-duration: 300ms;
+}
+
+*/
+
+/* Multiple Transitions start 
+
+
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+}
+
+div:hover {
+  background: coral;
+  color: #fff;
+}
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+  transition-property: background, border-radius;
+  transition-duration: 4s, 700ms;
+}
+
+.three:hover {
+  border-radius: 50%;
 }
