@@ -1,0 +1,31 @@
+/*  Properties for scale transformation
+
+scale(x,y) - scale the element by x and y
+scaleX(x) - scale the element by x horizontally
+scaleY(y) - scale the element by y vertically
+scaleZ(z) - scale the element by z
+
+scale will multiply the current value by the given value
+
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: scaleX(0.53);
+}
+
+.two {
+  background: blue;
+  transform: scaleY(1.5);
+}
+.three {
+  background: green;
+  transform: scale(1.1, 2.5);
+  transform: scale(2);
+}
