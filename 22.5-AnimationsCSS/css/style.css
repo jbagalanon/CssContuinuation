@@ -1,0 +1,59 @@
+/* 
+transition 0=100%
+from start to end state
+animatuiion 0 1% 2% . . . 100%
+multiple states
+
+animation use keyframes to define the states. use reference to the keyframes in the animation property
+
+animation will automatically reset to the start state after the animation is done
+  animation-duration: 6s; duration of the animation
+
+  animation-iteration-count: 2; how many times the animation will run
+
+  infinite; animation will run forever
+*/
+
+div {
+  width: 200px;
+  height: 100px;
+  color: white;
+  margin: 5px;
+}
+
+.transition {
+  background: red;
+  transition: all 2s linear;
+}
+
+.transition:hover {
+  background: yellowgreen;
+  transform: translateX(200px);
+}
+
+.animation {
+  background: blue;
+  animation-name: move;
+  /* animation-duration: 6s;
+  animation-iteration-count: 2; */
+  animation: move 6s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translate(100px);
+    background: red;
+  }
+
+  75% {
+    transform: translateX(-200px);
+    backgreound: yellowgreen;
+  }
+  100% {
+    transform: translateX(20px);
+    background: blue;
+  }
+}
