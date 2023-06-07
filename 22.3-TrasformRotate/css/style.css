@@ -13,7 +13,7 @@ transform skew
 
 */
 
-/* transform rotate css */
+/* transform rotate css
 div {
   width: 150px;
   height: 150px;
@@ -31,8 +31,27 @@ div {
 }
 .three {
   background: green;
-  /* transform: rotateZ(15deg); */
+  transform: rotateZ(15deg); 
   transform: rotatey(80deg);
 }
 
-/* end of tranform rotate  */
+ end of tranform rotate  */
+
+/* Start of transform skew */
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 5px;
+}
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+.three {
+  background: green;
+}
