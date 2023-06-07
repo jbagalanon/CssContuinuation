@@ -37,7 +37,12 @@ div {
 
  end of tranform rotate  */
 
-/* Start of transform skew */
+/* Start of transform skew
+skew(deg) - skew the element along the X-axis by the given degree
+
+skew(x,y) - skew the element along the X-axis and Y-axis by the given degree
+
+*/
 
 div {
   width: 150px;
@@ -47,11 +52,14 @@ div {
 }
 .one {
   background: red;
+  transform: skew(20deg);
 }
 
 .two {
   background: blue;
+  transform: skewX(20deg);
 }
 .three {
   background: green;
+  transform: skew(20deg, 30deg);
 }
