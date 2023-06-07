@@ -1,0 +1,36 @@
+/* note
+- padding is used to give some space between the text and the border
+
+- margin is used to give some space between the border and the edge of the screen
+
+- border is used to give a border to the element
+
+- margin is used to give some space between the border and the edge of the screen
+
+transform: translate(-50%, -50%); is used to center the element in the middle of the screen
+
+top: 50%; left: 50%; is used to move the element to the middle of the screen
+
+
+*/
+
+* {
+  margin: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+.hero-center {
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  min-width: 300px;
+}
+p {
+  padding: 0 1rem;
+}
