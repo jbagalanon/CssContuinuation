@@ -1,0 +1,42 @@
+/*  Properties for animation
+
+    animation-name
+    animation-duration
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-timing-function
+    animation-fill-mode
+    animation-play-state
+
+transform:translate(0px,0px), scale (1,1), rotate(0deg), skew(0deg,0deg
+
+trannsform:translateX(0px), translateY(0px), scale(1,1), rotate(0deg), skew(0deg,0deg)
+
+transform:translate(leftrightpx,updownpx%)
+
+translate x will move the element horizontally
+translate y will move the element vertically
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: translateX(50%);
+}
+
+.two {
+  background: blue;
+  transform: translateY(-40px);
+}
+.three {
+  background: green;
+  /* transform: translateX(75px); */
+  transform: translate(-100px, 100px);
+}
