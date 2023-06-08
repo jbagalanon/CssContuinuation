@@ -57,7 +57,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid red;
+  border: 5px solid white;
   text-align: center;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .temp {
   min-height: 100vh;
-  background: red;
+  background: darkgrey;
   padding: 1rem 0;
 }
 

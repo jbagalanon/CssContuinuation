@@ -1,0 +1,23 @@
+/* css variables - custom properties 
+allow to store values in variables and reuse them in other places
+
+--variable-name: value;
+property: var(--variable-name);
+
+scope
+:root{} === global
+element === global
+any property
+
+*/
+h1 {
+  color: #f15025;
+}
+
+h2 {
+  color: #f15025;
+}
+
+h3 {
+  color: #f10030;
+}
