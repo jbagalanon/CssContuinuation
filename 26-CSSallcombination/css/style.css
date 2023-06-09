@@ -26,21 +26,81 @@ for html, you can set it in the <span> tag after the div tag.
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: var(--black);
+  background: var(--grey-light);
 }
-h3 {
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
   text-transform: capitalize;
 }
 
-.read-more {
-  background: blue;
-  max-width: 75px;
-  color: white;
-  text-align: center;
-  display: block;
+.blogs-center {
+  width: var(--fluid-width);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  max-width: 500px;
 }
 
-.read-more:hover {
+.blog {
+  background: var(--white);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+}
+
+.blog:hover {
+  box-shadow: var(--shadow-dark);
+}
+
+.blog-img {
+  margin-bottom: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.blog-content {
+  padding: 0.5rem;
+}
+
+.blog-content h3 {
+  color: var(--primary);
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.blog-content p {
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content span {
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.blog-content a {
+  background: blue;
+  max-width: 85px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+a:hover {
   background: red;
+  font-weight: 700;
 }
