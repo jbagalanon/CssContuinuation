@@ -1,15 +1,35 @@
 /* object-fit
 object-fit:
 
-cover = Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.
+cover = Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area. For me this is the best option to use.
 
 contain = Scale the image, while preserving its intrinsic aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area.
 
-fill = Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.
+fill = Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area. strecth the image to fit the container.
 
-none = The replaced content is not resized.
+none = The replaced content is not resized. 
 
 scale-down = The content is sized as if none or contain were specified (would result in a smaller concrete object size).
 
-
 */
+
+img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+
+.one {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.two {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  text-align: center;
+}
