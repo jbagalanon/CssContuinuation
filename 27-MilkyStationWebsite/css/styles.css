@@ -22,7 +22,7 @@ body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
   color: var(--clr-grey-1);
-  line-height: 1.5;
+  line-height: 2;
   font-size: 0.875rem;
 }
 a {
@@ -85,5 +85,5 @@ p {
     line-height: 1;
   }
 }
- 
-}
+
+/* more additional global css */
