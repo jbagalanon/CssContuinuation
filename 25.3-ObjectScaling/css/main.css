@@ -1,0 +1,15 @@
+/* object-fit
+object-fit:
+
+cover = Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.
+
+contain = Scale the image, while preserving its intrinsic aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area.
+
+fill = Scale the image, while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.
+
+none = The replaced content is not resized.
+
+scale-down = The content is sized as if none or contain were specified (would result in a smaller concrete object size).
+
+
+*/
