@@ -166,3 +166,21 @@ outline offset for the button means the distance between the border and the butt
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
 }
+
+.content-divider {
+  width: 100vw;
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--clr-primary),
+    #e9b949,
+    var(--clr-primary)
+  );
+}
+
+.footers {
+  background-color: #678e3e;
+  color: white;
+  height: 100px;
+  text-align: center;
+}
