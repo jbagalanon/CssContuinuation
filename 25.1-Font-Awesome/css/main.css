@@ -23,3 +23,11 @@
   color: brown;
   font-size: 60px;
 }
+
+div {
+  font-size: 24;
+}
+
+.mug-coffee {
+  background: red;
+}
