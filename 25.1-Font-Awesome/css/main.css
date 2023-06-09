@@ -1,0 +1,25 @@
+.fa-house {
+  font-size: 50px;
+  margin-right: 20px;
+  color: burlywood;
+  position: relative;
+  border: 2px solid red;
+}
+
+.fa-house:hover {
+  color: blue;
+  font-size: 60px;
+}
+
+.fa-mug-hot {
+  font-size: 50px;
+  margin-left: 20px;
+  color: burlywood;
+  position: absolute;
+  border: 2px solid red;
+}
+
+.fa-mug-hot:hover {
+  color: brown;
+  font-size: 60px;
+}
