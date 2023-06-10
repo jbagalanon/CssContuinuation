@@ -73,7 +73,7 @@ p {
     font-size: 1.75rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   body {
     font-size: 1rem;
@@ -183,4 +183,48 @@ outline offset for the button means the distance between the border and the butt
   color: white;
   height: 100px;
   text-align: center;
+}
+
+/* skills set css
+
+
+
+clearfix is added to the container, so that the container will not collapse.
+
+display: inline-block for the skill, so the margin can be respected or applied.
+}
+
+*/
+
+.skills {
+  background: var(--clr-grey-10);
+}
+
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--clr-primary);
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.skill-text {
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+.skill:hover {
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
 }
