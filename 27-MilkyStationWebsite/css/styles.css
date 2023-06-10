@@ -319,3 +319,70 @@ about-info {
     padding-left: rem;
   }
 }
+
+/* product section css
+.products = this section is the container of the three products.
+
+object-fit:cover - this will allow the image not to be distorted, and it will be fit in the container.
+
+my mistake: I set the media query incorrectly which make my website not responsive. I set the min-width to 768px, which is wrong. It should be max-width: 768px. So that the css will be applied when the screen is less than 768px.
+
+my mistake 2: Be careful in html div closing tag. I close early which prevent the css to be applied.
+*/
+
+.products {
+  background: var(--clr-grey-10);
+}
+
+.products article {
+  padding: 2rem 0;
+}
+.product-text {
+  color: var(--clr-grey-5);
+  max-width: 26rem;
+}
+.product {
+  margin-bottom: 2rem;
+}
+
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+
+.product-price {
+  color: var(--clr-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    width: 50%;
+    float: left;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    margin-bottom: 0;
+    padding: 0 2rem;
+  }
+}
