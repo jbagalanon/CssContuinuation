@@ -230,9 +230,12 @@ display: inline-block for the skill, so the margin can be respected or applied.
 }
 
 */
-
-.skills {
+.skills-limit {
   background: var(--clr-grey-10);
+}
+.skills {
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
 .skill {
