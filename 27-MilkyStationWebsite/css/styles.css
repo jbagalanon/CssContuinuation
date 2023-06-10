@@ -56,7 +56,7 @@ h3 {
   font-size: 1.5rem;
 }
 h4 {
-  font-size: 0.075rem;
+  font-size: 0.85rem;
 }
 p {
   margin-bottom: 1.25rem;
@@ -136,6 +136,8 @@ outline: 0.125rem solid var(--clr-primary); for the button, so that it will have
 
 outline offset for the button means the distance between the border and the button itself. this will enhance the appearance of the button.
 
+Take note: if you can't find the text in heading tag or paragraph. Be sure to check the color and font size of the text.
+
 */
 
 .header {
@@ -157,6 +159,7 @@ outline offset for the button means the distance between the border and the butt
 .banner h2 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
+  line-height: 30px;
 }
 
 .banner h1 {
@@ -164,6 +167,7 @@ outline offset for the button means the distance between the border and the butt
   color: var(--clr-white);
   margin-top: 1.25rem;
   margin-bottom: 2rem;
+  line-height: 50px;
 }
 
 .banner-btn {
