@@ -107,6 +107,12 @@ p {
   color: var(--clr-primary);
   background: var(--clr-primary-light);
 }
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* CSS Description
 min hegiht, be sure it is not percentage, it must be vh
@@ -189,7 +195,7 @@ outline offset for the button means the distance between the border and the butt
 
 
 
-clearfix is added to the container, so that the container will not collapse.
+clearfix is added to the container, so that the container will not collapse, or the container will not be empty or overlapped by other elements. Set this in global variable and use before and afer
 
 display: inline-block for the skill, so the margin can be respected or applied.
 }
@@ -227,4 +233,18 @@ display: inline-block for the skill, so the margin can be respected or applied.
 
 .skill:hover .skill-icon {
   transform: translateY(-5px);
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    float: left;
+    width: 25%;
+  }
 }
