@@ -236,6 +236,7 @@ z-index: 1; this will make the button to be in the top of the other elements. Th
   z-index: 1;
   cursor: pointer;
   /* animation */
+  animation: bounce 3s ease-in-out infinite;
 }
 
 /* navbar button
@@ -269,6 +270,7 @@ this is for the navbar button -icon
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
   /* hide navbar */
   transform: translateX(-100%);
+  
 }
 
 .showNav {
@@ -289,6 +291,7 @@ this is for the navbar button -icon
 }
 
 .nav-close:hover {
+  
   color: var(--clr-primary);
 }
 
@@ -316,6 +319,24 @@ this is for the navbar button -icon
   .navbar {
     width: 30vw;
     max-width: 15rem;
+  }
+}
+
+
+/* navbar animation 
+*/
+
+@keyframes bounce{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform:scale(1.1); 
+  }
+  100%{
+    transform: scale(1);
+  }
+}
   }
 }
 
