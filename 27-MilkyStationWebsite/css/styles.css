@@ -184,7 +184,8 @@ Take note: if you can't find the text in heading tag or paragraph. Be sure to ch
 .banner h2 {
   font-family: var(--ff-secondary);
   color: var(--clr-primary);
-  line-height: 30px;
+  line-height: normal;
+  animation: slideFromRight 2s ease-in-out;
 }
 
 .banner h1 {
@@ -192,7 +193,8 @@ Take note: if you can't find the text in heading tag or paragraph. Be sure to ch
   color: var(--clr-white);
   margin-top: 1.25rem;
   margin-bottom: 2rem;
-  line-height: 50px;
+  line-height: 1;
+  animation: zoomInOpacity 2s ease;
 }
 
 .banner-btn {
@@ -220,6 +222,42 @@ Take note: if you can't find the text in heading tag or paragraph. Be sure to ch
   text-align: center;
 }
 
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-200px);
+  }
+
+  75% {
+    opacity: 0.7;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes zoomInOpacity {
+  0% {
+    opacity: 0;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
 /* navbtn
 this is navbar button
 
@@ -240,22 +278,15 @@ z-index: 1; this will make the button to be in the top of the other elements. Th
 }
 
 /* navbar button
-
-this is for the navbar button -icon
-
-
+this is for the navbar button icon
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  
-}
-  
-   this will make the button to be in the top of the other elements. This will make the button to be in the top of the other elements.
- /
-
+  bottom: 0;  
+}  
+   this will make the button to be in the top of the other elements. This will make the button to be in the top of the other elements. 
 */
 .navbar {
   position: fixed;
@@ -270,7 +301,6 @@ this is for the navbar button -icon
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
   /* hide navbar */
   transform: translateX(-100%);
-  
 }
 
 .showNav {
@@ -291,7 +321,6 @@ this is for the navbar button -icon
 }
 
 .nav-close:hover {
-  
   color: var(--clr-primary);
 }
 
@@ -322,28 +351,21 @@ this is for the navbar button -icon
   }
 }
 
+/* navbar animation */
 
-/* navbar animation 
-*/
-
-@keyframes bounce{
-  0%{
+@keyframes bounce {
+  0% {
     transform: scale(1);
   }
-  50%{
-    transform:scale(1.1); 
+  50% {
+    transform: scale(1.1);
   }
-  100%{
+  100% {
     transform: scale(1);
-  }
-}
   }
 }
 
 /* skills set css
-
-
-
 clearfix is added to the container, so that the container will not collapse, or the container will not be empty or overlapped by other elements. Set this in global variable and use before and afer
 
 display: inline-block for the skill, so the margin can be respected or applied.
