@@ -266,13 +266,14 @@ this is for the navbar button -icon
   height: 100%; */
   background: var(--clr-grey-10);
   z-index: 2;
-
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
   /* hide navbar */
+  transform: translateX(-100%);
 }
 
 .showNav {
   transform: translateX(0);
+  /* this will make the navbar to be shown once the navbar menu is close*/
 }
 
 .navbar-header {
