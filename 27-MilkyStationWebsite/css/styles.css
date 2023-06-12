@@ -220,6 +220,44 @@ Take note: if you can't find the text in heading tag or paragraph. Be sure to ch
   text-align: center;
 }
 
+/* navbtn
+this is navbar button
+
+z-index: 1; this will make the button to be in the top of the other elements. This will make the button to be in the top of the other elements.
+
+*/
+
+.nav-btn {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  z-index: 1;
+  cursor: pointer;
+  /* animation */
+}
+
+/* navbar button */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%;
+  height: 100%; */
+  background: var(--clr-grey-10);
+  z-index: 2;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  /* hide navbar */
+}
+
+.showNav {
+  transform: translateX(0);
+}
+
 /* skills set css
 
 
